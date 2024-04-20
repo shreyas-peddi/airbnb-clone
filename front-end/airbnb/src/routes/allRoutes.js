@@ -22,7 +22,6 @@ import AdminListings from '../components/Admin/AdminListings';
 import ListingDetails from '../components/Admin/ListingDetails';
 import AdminReviews from '../components/Admin/AdminReviews';
 import ReviewOverview from '../components/Admin/ReviewOverview';
-import ExtractApplicationData from '../components/Admin/ExtractApplicationData';
 
 // Host paths
 import HostBoard from '../components/Host/Host';
@@ -53,7 +52,6 @@ export default function Routes () {
       <AdminRoute exact path="/admin/listings/:listingId" component= {ListingDetails} /> 
       <AdminRoute exact path="/admin/reviews" component = {AdminReviews} />
       <AdminRoute exact path="/admin/reviews/:reviewId" component = {ReviewOverview} />
-      <AdminRoute exact path="/admin/application-data" component = {ExtractApplicationData} />
 
       <HostRoute exact path="/host/listings" component={HostBoard} />
       <HostRoute exact path="/host/create-listing" component={CreateListing} />

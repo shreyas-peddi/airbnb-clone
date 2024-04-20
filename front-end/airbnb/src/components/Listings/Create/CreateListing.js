@@ -9,7 +9,6 @@ import NumericInput from 'react-numeric-input';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import AuthService from '../../../_services/authentication.service';
-import OpenStreetMap from '../../../components/Map/OpenStreetMap';
 import {history} from '../../../_helpers/history';
 
 const required = value => {
@@ -61,7 +60,7 @@ class CreateListing extends Component {
       parking: false,
       elevator: false,
       startDate: new Date(),
-      endDate: new Date('12/30/2020'),
+      endDate: new Date('12/30/2024'),
       numOfReviews: 0,
       averageRating: 0.0,
       host: {
@@ -509,11 +508,7 @@ class CreateListing extends Component {
                         </ul>
                       </div>
                     </td>
-                    <td> {/* Map */}
-                      <div className='map-container' style = {{paddingTop: '10px'}}>
-                        <OpenStreetMap width={'500px'} height={'500px'} />
-                      </div>
-                    </td>
+                    
                   </tr>
 
                   <tr>

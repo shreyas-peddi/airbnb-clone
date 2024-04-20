@@ -3,7 +3,6 @@ import UserService from '../../../_services/user.service';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Loading from '../../Loading/Loading';
-import OpenStreetMap from '../../Map/OpenStreetMap';
 import {Link} from 'react-router-dom';
 import {history} from '../../../_helpers/history';
 import MessageIcon from '@material-ui/icons/Message';
@@ -167,7 +166,7 @@ class ListingResultsDetails extends Component {
             </ul>
             <li style={{width: '50%'}}>
               <ul className="listing-access" style={{float: 'right', display: 'inline-block'}}>
-                <li><OpenStreetMap width='100%' height='400px' /><br /></li>
+                <li><br /></li>
                 <li><h3 style={{color: 'black'}}>Transportation:</h3></li>
                 <li><h5>{this.state.listing.transportation}</h5></li>  
               </ul>

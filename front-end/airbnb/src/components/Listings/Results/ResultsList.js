@@ -43,7 +43,7 @@ const ResultsList = ({listings, guests, startDate, endDate, loading}) => {
                   {listing.title}
                   </div>
                   <div className="listing-cost">
-                    {listing.minCost+(guests-1)*listing.costPerExtraGuest}€/day
+                    {listing.minCost+(guests-1)*listing.costPerExtraGuest}$/day
                   </div>
                   <div className="listing-type">
                     Type: {((listing.type).replace('_', ' ')).toLowerCase()}

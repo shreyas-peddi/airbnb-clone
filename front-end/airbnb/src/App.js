@@ -91,7 +91,7 @@ class App extends Component {
           <header className="header">
             <nav className="navbar">
               <Link to={'/'}>
-                <img id="logo" src= {require('./images/logo-text.jpg')} 
+                <img id="logo" src= {require('./images/logo-text.png')} 
                   width='400px' height='60px' alt='logo'
                   style={{marginBottom: '8px'}}/>
               </Link>
@@ -139,11 +139,7 @@ class App extends Component {
                         Reviews
                       </Link>
                     </li>
-                    <li className="nav-item">
-                      <Link to={"/admin/application-data"} className="nav-link">
-                        Application Data
-                      </Link>
-                    </li>
+                    
                   </div>
                 )}
 

@@ -8,7 +8,6 @@ import { Checkbox } from "@material-ui/core";
 import NumericInput from 'react-numeric-input';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import OpenStreetMap from '../../components/Map/OpenStreetMap';
 import Loading from '../../components/Loading/Loading';
 
 const required = value => {
@@ -162,11 +161,9 @@ class Home extends Component {
               <div 
               className = 'form-inner'
               style = {{marginTop: '5%', minWidth: '1000px', boxShadow: '3px 3px grey'}}>
-              <div className='map-container'> 
-                <OpenStreetMap width='450px' height='450px' markerPosition = {this.state.markerPosition} />
-              </div>
+              
                 <h3>I'm looking for...</h3>
-                  <table style={{width: '400px', marginLeft: '2%'}}>
+                  <table style={{width: '950px', marginLeft: '2%'}}>
                     <tbody>
                       <tr>
                         <td> {/* Country */}
@@ -176,7 +173,7 @@ class Home extends Component {
                               type="text"
                               className="form-control"
                               name="country"
-                              placeholder="Greece..."
+                              placeholder="USA..."
                               value={this.state.country}
                               onChange={this.handleChange}
                               validations={[required]}
@@ -190,7 +187,7 @@ class Home extends Component {
                               type="text"
                               className="form-control"
                               name="city"
-                              placeholder="Santorini..."
+                              placeholder="Athens..."
                               value={this.state.city}
                               onChange={this.handleChange}
                               validations={[required]}
