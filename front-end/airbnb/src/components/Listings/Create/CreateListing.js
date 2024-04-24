@@ -394,7 +394,7 @@ class CreateListing extends Component {
                   <tr>
                     <td> {/* Number of WC */}
                       <div className="form-field">
-                        <label htmlFor="number">*WC</label>
+                        <label htmlFor="number">*Baths</label>
                         <NumericInput min={0} max={10}
                         value={this.state.numOfWc}
                         onChange={e => {
@@ -630,7 +630,6 @@ class CreateListing extends Component {
                       <div
                         style={{width: '200px'}}>
                         <label>Add photo</label>
-                        <p style={{fontSize: '12px', width: '135px', margin: '0%'}}>(You can add more later)</p>
                         <input
                         style={{width: '290px'}}
                         name = "selectedFile"

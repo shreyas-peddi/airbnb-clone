@@ -111,7 +111,7 @@ class ListingResultsDetails extends Component {
               </li>             
               <li><h3><br />Rooms: {this.state.listing.numOfRooms}</h3></li>                
               <li><h3>Beds: {this.state.listing.numOfBeds}</h3></li>
-              <li><h3>WC: {this.state.listing.numOfWc}</h3></li>                
+              <li><h3>Baths: {this.state.listing.numOfWc}</h3></li>                
               <li><h3>Square footage: {this.state.listing.squareFootage}&#13217;</h3></li>             
               <li><h3 style={{color: 'black'}}><br />Available features: {this.state.listing.number}</h3></li>
               <ul style={{display: 'inline-block'}}>
@@ -130,7 +130,7 @@ class ListingResultsDetails extends Component {
               <li><h3 style={{color: 'black'}}><br />Description:</h3></li>
               <li><h5> {this.state.listing.description}</h5></li>
               <li><h3 style={{color: 'black'}}><br />Price based on your search:</h3></li>
-              <li><h4>{this.state.price}€/day</h4></li>
+              <li><h4>{this.state.price}$/day</h4></li>
               <li style={{margin: '5% 0%', width: '100%'}}>
                 {!this.state.book && (
                   <button 

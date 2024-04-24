@@ -148,7 +148,7 @@ class Home extends Component {
     return (
       <div>
         <div className="home-main-container">
-          <header><h1 style={{fontFamily:'arial'}}><strong>Planning your trip made easy!</strong></h1></header>
+          <header><h1 style={{fontFamily:'arial'}}><strong>Book you stay for this holiday with us.</strong></h1></header>
           {!this.state.successful && (
             <Form 
               autoComplete = 'off'
@@ -162,7 +162,7 @@ class Home extends Component {
               className = 'form-inner'
               style = {{marginTop: '5%', minWidth: '1000px', boxShadow: '3px 3px grey'}}>
               
-                <h3>I'm looking for...</h3>
+                <h3>What are you searching for</h3>
                   <table style={{width: '950px', marginLeft: '2%'}}>
                     <tbody>
                       <tr>

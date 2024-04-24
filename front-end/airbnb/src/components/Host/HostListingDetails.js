@@ -233,7 +233,7 @@ class HostListingDetails extends Component {
                 <li><h3>Category: {((this.state.listing.type).replace('_', ' ').toLowerCase())}</h3></li>                
                 <li><h3>Rooms: {this.state.numOfRooms}</h3></li>                
                 <li><h3>Beds: {this.state.numOfBeds}</h3></li>
-                <li><h3>WC: {this.state.numOfWc}</h3></li>                
+                <li><h3>Baths: {this.state.numOfWc}</h3></li>                
                 <li><h3>Minimum rent days: {this.state.minRentDays}</h3></li>                
                 <li><h3>Maximum guests: {this.state.maxGuests}</h3></li>                
                 <li><h3>Minimum cost: {this.state.minCost}</h3></li>                
